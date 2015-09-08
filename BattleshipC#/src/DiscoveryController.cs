@@ -55,7 +55,7 @@ static class DiscoveryController
 
 	/// <summary>
 	/// Draws the game during the attack phase.
-	/// </summary>s
+	/// </summary>
 	public static void DrawDiscovery()
 	{
 		const int SCORES_LEFT = 172;

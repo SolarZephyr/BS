@@ -7,6 +7,8 @@ using System.Data;
 using System.Diagnostics;
 static class GameLogic
 {
+	///The Game logic class is responsible for opening the game window and loading the game resources.
+	///This class also calls the HandleUserInput and DrawScreen functions (Basic game loop)
 	public static void Main()
 	{
 		//Opens a new Graphics Window

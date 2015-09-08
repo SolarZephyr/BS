@@ -13,6 +13,7 @@ using SwinGameSDK;
 /// </summary>
 static class DeploymentController
 {
+	//Private constant variables used for button locations.
 	private const int SHIPS_TOP = 98;
 	private const int SHIPS_LEFT = 20;
 	private const int SHIPS_HEIGHT = 90;
@@ -34,14 +35,16 @@ static class DeploymentController
 	private const int DIR_BUTTONS_WIDTH = 47;
 
 	private const int TEXT_OFFSET = 5;
+	
 	private static Direction _currentDirection = Direction.UpDown;
 
 	private static ShipName _selectedShip = ShipName.Tug;
+	
 	/// <summary>
 	/// Handles user input for the Deployment phase of the game.
 	/// </summary>
 	/// <remarks>
-	/// Involves selecting the ships, deloying ships, changing the direction
+	/// Involves selecting the ships, deploying ships, changing the direction
 	/// of the ships to add, randomising deployment, end then ending
 	/// deployment
 	/// </remarks>

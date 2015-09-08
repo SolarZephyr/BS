@@ -7,9 +7,11 @@ using System.Data;
 using System.Diagnostics;
 using SwinGameSDK;
 
+///this class is responsible for loading all the images and fonts used in the battleships game.
 public static class GameResources
 {
 
+	//load fonts.
 	private static void LoadFonts()
 	{
 		NewFont("ArialLarge", "arial.ttf", 80);
@@ -18,6 +20,7 @@ public static class GameResources
 		NewFont("Menu", "ffaccess.ttf", 8);
 	}
 
+	//load images.
 	private static void LoadImages()
 	{
 		//Backgrounds
@@ -45,6 +48,7 @@ public static class GameResources
 
 	}
 
+	//load sounds.
 	private static void LoadSounds()
 	{
 		NewSound("Error", "error.wav");
@@ -56,6 +60,7 @@ public static class GameResources
 		NewSound("Lose", "lose.wav");
 	}
 
+	//load music.
 	private static void LoadMusic()
 	{
 		NewMusic("Background", "horrordrone.mp3");
@@ -66,7 +71,6 @@ public static class GameResources
 	/// </summary>
 	/// <param name="font">Name of Font</param>
 	/// <returns>The Font Loaded with this Name</returns>
-
 	public static Font GameFont(string font)
 	{
 		return _Fonts(font);
@@ -77,7 +81,6 @@ public static class GameResources
 	/// </summary>
 	/// <param name="image">Name of image</param>
 	/// <returns>The image loaded with this name</returns>
-
 	public static Bitmap GameImage(string image)
 	{
 		return _Images(image);
@@ -99,7 +102,6 @@ public static class GameResources
 	/// </summary>
 	/// <param name="music">Name of music</param>
 	/// <returns>The music with this name</returns>
-
 	public static Music GameMusic(string music)
 	{
 		return _Music(music);
@@ -156,6 +158,7 @@ public static class GameResources
 		EndLoadingScreen(width, height);
 	}
 
+	///Shows the Swingame loading screen.
 	private static void ShowLoadingScreen()
 	{
 		_Background = SwinGame.LoadBitmap(SwinGame.PathToResource("SplashBack.png", ResourceKind.BitmapResource));
@@ -173,6 +176,7 @@ public static class GameResources
 		PlaySwinGameIntro();
 	}
 
+	///Plays the swingame animation sound and image effects.
 	private static void PlaySwinGameIntro()
 	{
 		const int ANI_X = 143;

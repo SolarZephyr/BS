@@ -9,7 +9,7 @@ using SwinGameSDK;
 
 /// <summary>
 /// The EndingGameController is responsible for managing the interactions at the end
-/// of a game.
+/// of a game. (Prints Victory or Loss screen to player)
 /// </summary>
 
 static class EndingGameController
