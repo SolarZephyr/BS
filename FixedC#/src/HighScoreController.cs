@@ -144,7 +144,7 @@ static class HighScoreController
 			remaining Bug for complete
 			Convesion to C# (hopefully)*/
 			
-			s = _Score[i];
+			s = _Scores[i];
 
 			//for scores 1 - 9 use 01 - 09
 			if (i < 9) {
