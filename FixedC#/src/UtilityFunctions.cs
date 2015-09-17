@@ -143,9 +143,11 @@ static class UtilityFunctions
 				draw = true;
 
 				switch (grid[row, col]) {
-					case TileView.Ship:
+					/*case TileView.Ship:
 						draw = false;
 						break;
+						--> This was the duplicate function. Sorry!
+						*/
 					//If small Then fillColor = _SMALL_SHIP Else fillColor = _LARGE_SHIP
 					case TileView.Miss:
 						if (small)
@@ -160,13 +162,12 @@ static class UtilityFunctions
 							fillColor = LARGE_HIT;
 						break;
 					case TileView.Sea:
-					//Is this the duplicate one?
-					/*case TileView.Ship:
+					case TileView.Ship:
 						if (small)
 							fillColor = SMALL_SEA;
 						else
 							draw = false;
-						break;*/
+						break;
 					default:
 					break;
 				}
