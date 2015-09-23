@@ -138,11 +138,6 @@ static class HighScoreController
 		int i = 0;
 		for (i = 0; i <= _Scores.Count - 1; i++) {
 			Score s = default(Score);
-
-			
-			/* Here is the last
-			remaining Bug for complete
-			Convesion to C# (hopefully)*/
 			
 			s = _Scores[i];
 
